@@ -12,25 +12,36 @@
         <header class="cabecalho">
             <h1 class="titulo">Projeto Vida Na Àgua</h1>
             <nav class="navegacao">
-                <a class="bt-menu" href="">Sobre nós</a>
+                <a class="bt-menu" href="index.html">Home</a>
                 <a class="bt-menu" href="">Grupos</a>
-                <a class="bt-menu" href="">Feed</a>
             </nav>
         </header>
+        
+        <div class="ondas">
+            <img src="imgs/wave.svg" alt="onda">
+        </div>
+
         <main>
-            <div class="divFormulario">
+            <section class="divFormulario">
                 <p class="text_logo">Entre com sua conta</p>
                 <form action="index.html">
                     <!-- <label for="email" class="form_label">E-mail</label><br>*/ -->
                     <input type="email"  class="form_input" placeholder="E-mail" id="email" name="email" required><br>
                     <!-- <label for="senha" class="form_label">Senha</label><br> -->
                     <input type="password" class="form_input" placeholder="Senha" id="senha" name="senha"><br>
-                    <a href="cadastro.html" target="_blank">Esqueceu a senha?</a><br>
+                    <a class="text_cadastro" href="cadastro.html" target="_blank">Esqueceu a senha?</a><br>
                     <button onsubmit="">Entrar</button>
                 </form>
-                <p>Ainda não tem uma conta?</p>
-                <a href="cadastro.html" target="_blank">Cadastre-se</a>
-            </div>
+                <p class="text_conta">Ainda não tem uma conta?</p>
+                <a class="text_cadastro" href="cadastro.html" target="_blank">Cadastre-se</a>
+            </section>
+            <img class="peixe-boi" src="imgs/peixe-boi.svg" alt="peixe-boi">
         </main>
+
+        <footer>
+            <div class="ondas">
+                <img src="imgs/wave-footer.svg" alt="onda">
+            </div>
+        </footer>
     </body>
 </html>
