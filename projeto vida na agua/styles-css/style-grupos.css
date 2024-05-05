@@ -39,6 +39,93 @@
     flex-direction: column;
     align-items: center;
 }
+.feed{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 4%;
+    width: 50%;
+}
+.perfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.foto_perfil{
+    height: 50px;
+    border: #0b2230 solid 3px;
+    border-radius: 100%;
+}
+.nome_perfil{
+    font-weight: bold;
+    margin-left: 2%;
+}
+.publicacao{
+    border-radius: 2%;
+    margin: 1% 0%;
+    width: 100%;
+}
+.legenda{
+    background-color:#c1cddb;
+    padding: 5%;
+    width: 90%;
+    border-radius: 5px 50px 5px 50px;
+}
+
+.add_grupo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: #0b2230 solid 2px ;
+    border-radius: 20px;
+    padding:3%;
+
+}
+
+.formulario_grupo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .rodape{
     background-color:#7ebbc2 ;
+    display: flex;
+    height: 200px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+label{
+    margin: 2%;
+}
+
+.botao_pronto{
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
+    margin-top: 20px;
+    width: 100% ;
+    height: 30px;
+    padding: 10px 100px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 0.2rem;
+    display: block;
+    border: none;
+}
+
+.botao_pronto:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.texto_rodape{
+    height: 150px;
+    width: 300px;
 }

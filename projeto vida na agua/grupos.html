@@ -16,23 +16,62 @@
             <a class="bt-menu" href="../index.html">Inicío</a>
             <a class="bt-menu" href="ranque.html">Ranque</a>
             <a class="bt-menu" href="login.html">Log in</a>
+            <a class="bt-menu" href="#novo-grupo">Montar Grupo</a>
         </nav>
     </header>
     <div class="ondas">
         <img src="imgs/wave.svg" alt="onda">
     </div>
+
     <main class="principal">
         <h2 class="titulo"> Bem vindo aos Grupos</h2>
-        <section class=" add_grupo">
-            
+
+        <section class="feed">
+            <div class="perfil">
+                <img class="foto_perfil" src="https://thumbs.dreamstime.com/b/vetor-de-%C3%ADcone-perfil-do-avatar-padr%C3%A3o-foto-usu%C3%A1rio-m%C3%ADdia-social-183042379.jpg" alt="foto de perfil">
+                <h3 class="nome_perfil"> nome do Grupo</h3>
+            </div>
+
+           <figure>
+                <img class="publicacao" src="https://blog.brkambiental.com.br/wp-content/uploads/2019/09/original-b34f2200b10e3e2655a4e0c276b27836.jpg" alt="publicação">
+                <figcaption class="legenda"> Esse testo é un exenplo de uma legenda pra se adicionar as suas publicações</figcaption>
+           </figure>
+
+        </section>
+
+        <section id="novo-grupo" class=" add_grupo">
+            <h2 class="titulo">Novo Grupo</h2>
+
+            <form class="formulario_grupo" >
+                <label for="nome">Nome</label>
+                <input id="nome" idtype="text">
+
+                <label for="integrantes">Integrantes</label>
+                <div class="campo_integrantes">
+                    <input id="integrantes" type="text">
+                    <button>+</button>
+                </div>
+                <button class="botao_pronto"> Pronto </button>
+            </form>
 
         </section>
 
     </main>
+
+    <div class="ondas">
+        <img src="imgs/wave-footer.svg" alt="onda">
+    </div>
     <footer class="rodape">
-        <div class="ondas">
-            <img src="imgs/wave-footer.svg" alt="onda">
-        </div>
+        <p class="texto_rodape">
+            Esse é um projeto idealizado para a diciplina de Programação Web Front-end do curso de Engenharia de Software da (UTFPR).
+            E o software não esta finalizado, mas concideramos uma ideia valida para por em pleno funcionamento no futuro.
+        </p>
+        <section class=" autores">
+            <h2 class="titulo">Autores </h2>
+        </section>
+        <p class="info">
+            Programação Web Front-end (2024.1) 2024
+        </p>
     </footer>
 </body>
 </html>
