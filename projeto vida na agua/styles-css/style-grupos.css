@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    font-family: "Comfortaa", sans-serif;
+}
+
+.cabesalho{
+    display: flex;
+    flex-direction: column;
+    background-color: #7ebbc2;
+    padding: 1%;
+   
+}
+
+.titulo{
+    margin: 2%;
+    font-family: "Pacifico", cursive;
+    color: #0b2230;
+    font-weight: bold;
+}
+.bt-menu{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    color: #0b2230;
+}
+
+.navegacao{
+    display: flex;
+    justify-content: space-around;
+}
+
+.ondas{
+    background-color: #E0E4E7;
+}
+
+.principal{
+    background-color: #E0E4E7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rodape{
+    background-color:#7ebbc2 ;
+}
