@@ -1,61 +1,43 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto vida na água</title>
+    <title>Administração - Projeto Vida na Água</title>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles-css/style-admin.css">
 </head>
 <body>
-    <header class="cabesalho">
-        <h1 class="titulo">Projeto Vida Na Àgua</h1>
+    <header class="cabecalho">
+        <h1 class="titulo">Projeto Vida Na Água</h1>
         <nav class="navegacao">
-            <a class="bt-menu" href="admin.html">Admin</a>
+            <a class="bt-menu" href="../index.html">Início</a>
             <a class="bt-menu" href="grupos.html">Grupos</a>
             <a class="bt-menu" href="ranque.html">Ranque</a>
             <a class="bt-menu" href="login.html">Log in</a>
-            <a class="bt-menu" href="#Sobre">Sobre nos?</a>
+            <a class="bt-menu" href="#Sobre">Sobre nós</a>
         </nav>
     </header>
     
     <main class="principal">
-        <br>
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
         <section class="divFormulario">
-            <p class="text_logo">CADASTRAR NOVO USUARIO</p>
-            <form action="../index.html">
-                <input type="usuario" class="form_input" placeholder="Usuario" id="usuario" name="usuario"><br>
-                <input type="email"  class="form_input" placeholder="E-mail" id="email" name="email" required><br>
-                <button onsubmit="">CADASTRAR</button>
+            <p class="text_logo">Cadastrar Novo Usuário</p>
+            <form id="formularioUsuario">
+                <input type="text" class="form_input" placeholder="Usuário" id="nome" name="usuario" required><br>
+                <input type="email" class="form_input" placeholder="E-mail" id="email" name="email" required><br>
+                <button type="submit">Cadastrar</button>
             </form>
+            <button id="limparCampos">Limpar Campos</button>
         </section>
-       <img class="tartaruga" src="imgs/tartaruga.svg" alt="">
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
+
+        <section class="divFormulario">
+            <p class="text_logo">Lista de Usuários</p>
+            <input type="text" class="form_input" id="pesquisa" placeholder="Pesquisar...">
+            <ul id="listaUsuarios"></ul>
+            <button id="excluirTodos">Excluir Todos</button>
+        </section>
+       
     </main>
 
     <div class="ondas">
@@ -63,15 +45,17 @@
     </div>
     <footer class="rodape">
         <p class="texto_rodape">
-            Esse é um projeto idealizado para a diciplina de Programação Web Front-end do curso de Engenharia de Software da (UTFPR).
-            E o software não esta finalizado, mas concideramos uma ideia valida para por em pleno funcionamento no futuro.
+            Esse é um projeto idealizado para a disciplina de Programação Web Front-end do curso de Engenharia de Software da (UTFPR).
+            E o software não está finalizado, mas consideramos uma ideia válida para por em pleno funcionamento no futuro.
         </p>
-        <section class=" autores">
-            <h2 class="titulo">Autores </h2>
+        <section class="autores">
+            <h2 class="titulo">Autores</h2>
         </section>
         <p class="info">
             Programação Web Front-end (2024.1) 2024
         </p>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>

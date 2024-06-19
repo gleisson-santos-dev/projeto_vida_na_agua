@@ -1,61 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grupos</title>
+    <title>Administração - Projeto Vida na Água</title>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles-css/style-grupos.css">
+    <link rel="stylesheet" href="styles-css/style-admin.css">
 </head>
-
 <body>
-    <header class="cabesalho">
-        <h1 class="titulo">Projeto Vida Na Àgua</h1>
+    <header class="cabecalho">
+        <h1 class="titulo">Projeto Vida Na Água</h1>
         <nav class="navegacao">
-            <a class="bt-menu" href="../index.html">Inicío</a>
+            <a class="bt-menu" href="admin.html">Admin</a>
+            <a class="bt-menu" href="grupos.html">Grupos</a>
             <a class="bt-menu" href="ranque.html">Ranque</a>
             <a class="bt-menu" href="login.html">Log in</a>
-            <a class="bt-menu" href="#novo-grupo">Montar Grupo</a>
+            <a class="bt-menu" href="#Sobre">Sobre nós</a>
         </nav>
     </header>
-    <div class="ondas">
-        <img src="imgs/wave.svg" alt="onda">
-    </div>
-
+    
     <main class="principal">
-        <h2 class="titulo"> Bem vindo aos Grupos</h2>
-
-        <section class="feed">
-            <div class="perfil">
-                <img class="foto_perfil" src="https://thumbs.dreamstime.com/b/vetor-de-%C3%ADcone-perfil-do-avatar-padr%C3%A3o-foto-usu%C3%A1rio-m%C3%ADdia-social-183042379.jpg" alt="foto de perfil">
-                <h3 class="nome_perfil"> nome do Grupo</h3>
-            </div>
-
-           <figure>
-                <img class="publicacao" src="https://blog.brkambiental.com.br/wp-content/uploads/2019/09/original-b34f2200b10e3e2655a4e0c276b27836.jpg" alt="publicação">
-                <figcaption class="legenda"> Esse testo é un exenplo de uma legenda pra se adicionar as suas publicações</figcaption>
-           </figure>
-
-        </section>
-
-        <section id="novo-grupo" class=" add_grupo">
-            <h2 class="titulo">Novo Grupo</h2>
-
-            <form class="formulario_grupo" >
-                <label for="nome">Nome</label>
-                <input id="nome" idtype="text">
-
-                <label for="integrantes">Integrantes</label>
-                <div class="campo_integrantes">
-                    <input id="integrantes" type="text">
-                    <button>+</button>
-                </div>
-                <button class="botao_pronto"> Pronto </button>
+        <section class="divFormulario">
+            <p class="text_logo">Cadastrar Novo Usuário</p>
+            <form id="formularioUsuario">
+                <input type="text" class="form_input" placeholder="Usuário" id="nome" name="usuario" required><br>
+                <input type="email" class="form_input" placeholder="E-mail" id="email" name="email" required><br>
+                <button type="submit">Cadastrar</button>
             </form>
-
+            <button id="limparCampos">Limpar Campos</button>
         </section>
 
+        <section class="divFormulario">
+            <p class="text_logo">Lista de Usuários</p>
+            <input type="text" class="form_input" id="pesquisa" placeholder="Pesquisar...">
+            <ul id="listaUsuarios"></ul>
+            <button id="excluirTodos">Excluir Todos</button>
+        </section>
+       
     </main>
 
     <div class="ondas">
@@ -63,15 +45,17 @@
     </div>
     <footer class="rodape">
         <p class="texto_rodape">
-            Esse é um projeto idealizado para a diciplina de Programação Web Front-end do curso de Engenharia de Software da (UTFPR).
-            E o software não esta finalizado, mas concideramos uma ideia valida para por em pleno funcionamento no futuro.
+            Esse é um projeto idealizado para a disciplina de Programação Web Front-end do curso de Engenharia de Software da (UTFPR).
+            E o software não está finalizado, mas consideramos uma ideia válida para por em pleno funcionamento no futuro.
         </p>
-        <section class=" autores">
-            <h2 class="titulo">Autores </h2>
+        <section class="autores">
+            <h2 class="titulo">Autores</h2>
         </section>
         <p class="info">
             Programação Web Front-end (2024.1) 2024
         </p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
