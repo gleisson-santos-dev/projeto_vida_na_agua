@@ -7,7 +7,7 @@
     <title>Projeto vida na água</title>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles-css/styles.css">
+    <link rel="stylesheet" href="styles-css/style-admin.css">
 </head>
 <body>
     <header class="cabesalho">
@@ -28,10 +28,14 @@
        <br>
        <br>
        <br>
-       <section class=" Sobre-section" id="Sobre">
-        <h2 class="titulo">Admin</h2>
-        <p>Cadastrar novos usuarios.</p>
-       </section>
+        <section class="divFormulario">
+            <p class="text_logo">CADASTRAR NOVO USUARIO</p>
+            <form action="../index.html">
+                <input type="usuario" class="form_input" placeholder="Usuario" id="usuario" name="usuario"><br>
+                <input type="email"  class="form_input" placeholder="E-mail" id="email" name="email" required><br>
+                <button onsubmit="">CADASTRAR</button>
+            </form>
+        </section>
        <img class="tartaruga" src="imgs/tartaruga.svg" alt="">
        <br>
        <br>
