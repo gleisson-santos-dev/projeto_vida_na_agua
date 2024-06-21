@@ -1,3 +1,4 @@
 Links: 
 pages: https://gleisson-santos-dev.github.io/projeto_vida_na_agua/index.html
-video: https://youtu.be/a1E5H6UkT3E
+video primera entrega: https://youtu.be/a1E5H6UkT3E
+video segunda entrega: https://youtu.be/LvjgL3Dmq20

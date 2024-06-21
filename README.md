@@ -8,5 +8,8 @@ os antes e depois deve ser postado no feed do grupo. Há um ranqueamento mensal 
 
 <h2>Link do GitHub pages:</h2>
 <a href="https://gleisson-santos-dev.github.io/projeto_vida_na_agua/index.html">https://gleisson-santos-dev.github.io/projeto_vida_na_agua/index.html</a>
-<h2>Link do Video</h2>
+<h2>Link do Video 1</h2>
 <a href="https://youtu.be/a1E5H6UkT3E">https://youtu.be/a1E5H6UkT3E</a>
+
+<h2>Link do Video 2</h2>
+<a href ="https://youtu.be/LvjgL3Dmq20">https://youtu.be/LvjgL3Dmq20</a>
