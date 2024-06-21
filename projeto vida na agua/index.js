@@ -1,7 +1,7 @@
 /*Para realizar tais funcionalidades, deverão ser utilizadas as API’s DOM HTML e Web
 Storage.
 */
-
+//Carregamento do DOM
 document.addEventListener('DOMContentLoaded', function() {
     const formularioUsuario = document.getElementById('formularioUsuario');
     const listaUsuarios = document.getElementById('listaUsuarios');
@@ -9,14 +9,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const botaoLimparCampos = document.getElementById('limparCampos');
     const botaoExcluirTodos = document.getElementById('excluirTodos');
 
-    //PEga os usuarios que foram armazenados no localStorage
+    /*PEga os usuarios que foram armazenados no localStorage.
+      Essa função faz a busca dos dados armazenados na chave usuarios
+      Convertendo a string JSON em um objeto, mas caso nao tenha nada ela retorna um array vazio*/
     function obterUsuarios() {
         const usuarios = localStorage.getItem('usuarios');
-        //Aqui, caso tenha algo armazenado, tranfosrma a string JSON em um obejto, senão ele retorna uma lista vazia
         return usuarios ? JSON.parse(usuarios) : [];
     }
 
-    // Salvar um usuario no localStorage e atualizar a lista na pagina. Aqui ela vai trasformar a lista de usuarios em uma string JSON e armazenar no localStorage
+    /*Salvar um usuario no localStorage e atualizar a lista na pagina.
+      Aqui ela vai trasformar a lista de usuarios em uma string JSON e armazenar no localStorage */
     function salvarUsuario(usuario) {
         const usuarios = obterUsuarios();
         usuarios.push(usuario);
@@ -24,7 +26,11 @@ document.addEventListener('DOMContentLoaded', function() {
         renderizarUsuarios(usuarios);
     }
 
-    // Função que vai exibir a lista na pagina 
+    /* Função que vai exibir a lista na pagina
+       Limpa a lista atual mostrada na pagina
+       É criado um item de lista 'li' para os usuarios 
+       Adiciona o botão excluir
+       Ao clicar no botao excluir temos um evento para remover o usuário da lista e do localStorage*/
     function renderizarUsuarios(usuarios) {
         listaUsuarios.innerHTML = '';
         usuarios.forEach((usuario, indice) => {
@@ -40,7 +46,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Essa função vai excluir um usuario especifico da lista e tambem do localStorage.
+    /* Essa função vai excluir um usuario especifico da lista e tambem do localStorage
+       Remove a partir do indice passado
+       O localStorage é atualizado com a nova lista e chama a função renderizarUsuarios */
     function excluirUsuario(indice) {
         const usuarios = obterUsuarios();
         usuarios.splice(indice, 1);
@@ -57,7 +65,9 @@ document.addEventListener('DOMContentLoaded', function() {
         renderizarUsuarios([]);
     }
 
-    // Funcao para pesquisar por nome na lista
+    /* Funcao para pesquisar por nome na lista 
+       A partir do dos caracteres digitados filtra a lista, 
+       Exibindo aqueles que possuem os caracteres e chama a função renderizarUsuario*/
     function filtrarUsuarios(consulta) {
         const usuarios = obterUsuarios();
         const usuariosFiltrados = usuarios.filter(usuario => 
